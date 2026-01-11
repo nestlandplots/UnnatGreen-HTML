@@ -10,53 +10,59 @@
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
+
   <header class="fixed w-full z-50 transition-all duration-500 bg-transparent">
     <nav class="container mx-auto px-6 py-4">
       <div class="flex items-center justify-between">
         <a href="/" class="flex items-center space-x-4 group">
-          <img src="assets/images/logo.png" alt="Unnat Green Logo" class="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 object-contain transition-all duration-300 group-hover:scale-110" />
+          <img src="assets/images/logo.png" alt="Unnat Green Logo" class="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 object-contain transition-all duration-300 group-hover:scale-110 group-hover:drop-shadow-2xl" />
           <div>
-            <span class="text-2xl md:text-3xl lg:text-4xl font-bold text-amber-900">Unnat Green</span>
-            <p class="text-xs md:text-sm -mt-1 text-amber-700">Farmland Paradise</p>
+            <span class="text-2xl md:text-3xl lg:text-4xl font-bold transition-colors duration-300 text-amber-900">Unnat Green</span>
+            <p class="text-xs md:text-sm -mt-1 transition-colors duration-300 text-amber-700">Farmland Paradise</p>
           </div>
         </a>
+
         <div class="hidden md:flex items-center space-x-8">
-          <a href="/#overview" class="text-gray-700 hover:text-amber-600 transition-colors font-medium">Overview</a>
+          <a href="index.html" class="text-gray-700 hover:text-amber-600 transition-colors duration-200 font-medium">Overview</a>
+
           <div class="relative group" data-projects-dropdown-button>
-            <button class="flex items-center space-x-1 text-gray-700 hover:text-amber-600 transition-colors font-medium py-2">
+            <button class="flex items-center space-x-1 text-gray-700 hover:text-amber-600 transition-colors duration-200 font-medium py-2">
               <span>Our Projects</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"></path></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
             </button>
             <div data-projects-dropdown class="hidden absolute top-full left-0 pt-2 w-56 z-50">
               <div class="bg-white rounded-2xl shadow-2xl border-2 border-amber-200 py-2">
-                <a href="/nestland-velhe.html" class="block px-6 py-3 text-gray-700 hover:bg-amber-50 hover:text-amber-600 transition-colors font-medium">Nestland Velhe</a>
-                <a href="/nestland-bhor.html" class="block px-6 py-3 text-gray-700 hover:bg-amber-50 hover:text-amber-600 transition-colors font-medium">Nestland Bhor</a>
+                <a href="nestland-velhe.html" class="block px-6 py-3 text-gray-700 hover:bg-amber-50 hover:text-amber-600 transition-colors duration-200 font-medium">Nestland Velhe</a>
+                <a href="nestland-bhor.html" class="block px-6 py-3 text-gray-700 hover:bg-amber-50 hover:text-amber-600 transition-colors duration-200 font-medium">Nestland Bhor</a>
               </div>
             </div>
           </div>
-          <a href="/#reasons" class="text-gray-700 hover:text-amber-600 transition-colors font-medium">Why Choose Us</a>
-          <a href="/#contact" class="text-gray-700 hover:text-amber-600 transition-colors font-medium">Contact</a>
-          <a href="tel:7020875371" class="px-6 py-3 bg-gradient-to-r from-amber-600 to-yellow-600 text-white rounded-full font-medium hover:shadow-xl transition-all hover:scale-105">Call Now</a>
+
+          <a href="index.html#reasons" class="text-gray-700 hover:text-amber-600 transition-colors duration-200 font-medium">Why Choose Us</a>
+          <a href="index.html#contact" class="text-gray-700 hover:text-amber-600 transition-colors duration-200 font-medium">Contact</a>
+          <a href="tel:7020875371" class="px-6 py-3 bg-gradient-to-r from-amber-600 to-yellow-600 text-white rounded-full font-medium hover:shadow-xl hover:shadow-amber-500/30 transition-all duration-300 hover:scale-105">Call Now</a>
         </div>
+
         <button data-mobile-menu-button class="md:hidden text-amber-900">
-          <svg data-icon="menu" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
-          <svg data-icon="x" class="hidden" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+          <svg data-icon="menu" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+          <svg data-icon="x" class="hidden" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
         </button>
       </div>
+
       <div data-mobile-menu class="hidden md:hidden mt-6 pb-6 space-y-4">
-        <a href="/#overview" class="block text-gray-700 hover:text-amber-600 transition-colors font-medium py-2">Overview</a>
+        <a href="index.html" class="block text-gray-700 hover:text-amber-600 transition-colors duration-200 font-medium py-2">Overview</a>
         <div>
-          <button data-projects-dropdown-button-mobile class="flex items-center justify-between w-full text-gray-700 hover:text-amber-600 transition-colors font-medium py-2">
+          <button data-projects-dropdown-button-mobile class="flex items-center justify-between w-full text-gray-700 hover:text-amber-600 transition-colors duration-200 font-medium py-2">
             <span>Our Projects</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="transition: transform 0.2s;"><path d="m6 9 6 6 6-6"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.2s;"><path d="m6 9 6 6 6-6"></path></svg>
           </button>
           <div data-projects-dropdown-mobile class="hidden pl-4 mt-2 space-y-2">
-            <a href="/nestland-velhe.html" class="block text-gray-600 hover:text-amber-600 transition-colors py-2">Nestland Velhe</a>
-            <a href="/nestland-bhor.html" class="block text-gray-600 hover:text-amber-600 transition-colors py-2">Nestland Bhor</a>
+            <a href="nestland-velhe.html" class="block text-gray-600 hover:text-amber-600 transition-colors duration-200 py-2">Nestland Velhe</a>
+            <a href="nestland-bhor.html" class="block text-gray-600 hover:text-amber-600 transition-colors duration-200 py-2">Nestland Bhor</a>
           </div>
         </div>
-        <a href="/#reasons" class="block text-gray-700 hover:text-amber-600 transition-colors font-medium py-2">Why Choose Us</a>
-        <a href="/#contact" class="block text-gray-700 hover:text-amber-600 transition-colors font-medium py-2">Contact</a>
+        <a href="index.html#reasons" class="block text-gray-700 hover:text-amber-600 transition-colors duration-200 font-medium py-2">Why Choose Us</a>
+        <a href="index.html#contact" class="block text-gray-700 hover:text-amber-600 transition-colors duration-200 font-medium py-2">Contact</a>
         <a href="tel:7020875371" class="block w-full text-center px-6 py-3 bg-gradient-to-r from-amber-600 to-yellow-600 text-white rounded-full font-medium">Call Now</a>
       </div>
     </nav>
